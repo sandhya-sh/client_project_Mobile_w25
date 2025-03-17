@@ -1,0 +1,600 @@
+/* Mobile Viewport Size - Please use the breakpoint 414px * 896px or iphone XR */
+/* font-Base Size: 18px, I'm using rem quivalent based on my default font*/
+/* Michigan yellow - #FFCB05 */
+/* Michigan Blue - #00274C*/
+
+/* Global stylings starts here */
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1rem;
+}
+
+.skip a {
+  position: absolute;
+  top: -40px;
+  transition: top 0.3s ease;
+}
+
+.skip a:focus {
+  top: 20px;
+  color: #fff;
+  background-color: #000000;
+}
+
+*:focus {
+  border: 2px solid;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+.active {
+  font-weight: bold;
+  background-color: #Ffc72c;
+  border: 2px solid #ffffff;
+
+}
+
+header {
+  background-color: #00274c;
+  color: #fff;
+  padding: 1rem;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.main-nav ul li {
+  background-color: #FFCB05;
+  border-radius: 4px;
+}
+
+.main-nav a {
+  color: #00274C;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.main-nav a:focus,
+.main-nav a:hover {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+.container {
+  padding: 1rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #00274c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #00274c;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: #FFCB05;
+  text-decoration: underline;
+}
+
+/* Global stylings ends  here */
+
+
+/* Index specific stylings starts here  */
+.container ol {
+  padding: 1rem;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+article {
+  margin-bottom: 1rem;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 10px 0px;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  text-align: center;
+  font-style: oblique;
+}
+
+.life-outside ul {
+  padding: 0 1rem;
+}
+
+/* Index specific stylings ends here  */
+
+/* caps specific stylings starts here  */
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.intro-text p {
+  margin: 0 0 1rem;
+}
+
+.intro-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.intro-buttons button {
+  padding: 0.75rem;
+  background-color: #00274c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.intro-buttons button:hover,
+.intro-buttons button:focus {
+  background-color: #001d39;
+  outline: 2px solid #fff;
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: #00274c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.card a:hover,
+.card a:focus {
+  background-color: #001d39;
+  outline: 2px solid #fff;
+}
+
+/* Announcement Section */
+.announcement {
+  background-color: #FFCB05;
+  color: #00274c;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.announcement h2 {
+  margin-top: 0;
+}
+
+.resources {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resources-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.resources-buttons button {
+  padding: 0.75rem;
+  background-color: #00274c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.resources-buttons button:hover,
+.resources-buttons button:focus {
+  background-color: #001d39;
+  outline: 2px solid #fff;
+}
+
+.contact-hours {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-hours h3 {
+  margin-bottom: 0.5rem;
+}
+
+.contact,
+.hours {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* caps specific styling ends here */
+
+/* Student life page specific styling starts here */
+.secondary-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  display: grid;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.hero-content input[type="search"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.resources {
+  margin-bottom: 2rem;
+}
+
+.resources .section-title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.grid-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.category {
+  background: #f9f9f9;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.category img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.category h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.category p {
+  font-size: 0.95rem;
+}
+
+.view-all {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #00274c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.view-all:hover,
+.view-all:focus {
+  background-color: #001d39;
+  outline: 2px solid #fff;
+}
+
+/* Student life page specific styling ends here */
+
+/* UMIS tutoring page specific styling starts here */
+
+.Sec-Nav {
+  padding: 1rem;
+  background: #f0f0f0;
+}
+
+.Sec-Nav h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.Sec-Nav ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Sec-Nav>ul>li {
+  background: #fff;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+
+.Sec-Nav li ul {
+  list-style: disc;
+  margin: 0.5rem 0 0 1.5rem;
+  padding: 0;
+}
+
+
+.Sec-Nav a {
+  color: #00274C;
+  text-decoration: none;
+}
+
+.Sec-Nav a:hover,
+.Sec-Nav a:focus {
+  text-decoration: underline;
+}
+
+.intro {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.intro h1,
+.intro h2 {
+  margin: 1rem;
+}
+
+.intro ul {
+  list-style: disc inside;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+
+.peer-tutoring {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.peer-tutoring h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.peer-tutoring img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.peer-tutoring p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* UMIS tutoring page specific styling ends here */
+
+/* Media Query */
+@media (min-width: 600px) {
+
+  /* index page specific styling starts*/
+  .header-container {
+    grid-template-columns: auto 1fr;
+    text-align: left;
+    align-items: center;
+  }
+
+  .logo {
+    justify-self: start;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .logo img {
+    width: 20%;
+    height: auto;
+    margin: 0;
+  }
+
+  .main-nav ul {
+    grid-template-columns: repeat(4, auto);
+    gap: 1rem;
+    justify-content: end;
+  }
+
+  /* index page specific styling ends*/
+
+  /* caps page specific styling starts*/
+  .welcome {
+    text-align: left;
+  }
+
+  .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .life-outside {
+    padding: 0 1rem;
+  }
+
+  /* caps page specific styling ends*/
+
+  /* student life page specific styling starts*/
+  .hero {
+    text-align: left;
+    align-items: center;
+  }
+
+  .grid-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* student life page specific styling ends */
+  /* UMIS tutoring page specific styling starts here */
+  .peer-tutoring {
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: left;
+  }
+  .Sec-Nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* UMIS tutoring page specific styling ends here */
+  /* media query ends here */
+}
